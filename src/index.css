@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+:root {
+  --primary-color: #2f323df2;
+  --secondary-color: ;
+  --primary-bg: ;
+  --color-white: #d9d2ca;
+  --primary-grey: '#62707B';
+  --secondary-bg: ;
+  --primary-font-size: '12px';
+  --primary-line-height: '1.6em';
+  --primary-font-color: '#4a4a4a';
+  --primary-color: #1bcc99;
+  --text-green: #164E8D;
+  --tomato: #dc604f;
+  --off-white: #c5ddd4;
+  --primary-yellow: '#F5CC56';
+  --primary-orange: '#e8a835';
+  --primary-color-light: '#00cc992b';
+  --primary-red: '#ff6384';
+  --primary-font: 'Manrope', 'Open Sans', sans-serif,'Segoe UI', 'Roboto','Ubuntu';
+  --secondary-font: 'Barlow Condensed', 'sans-serif';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* text-transform: capitalize */
+  /* font-family: var(--primary-font); */
+  
+}
