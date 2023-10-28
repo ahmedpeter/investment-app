@@ -142,7 +142,7 @@ function Register() {
                     </div>
                
                     <div className="form">
-                <FormControl variant="standard">
+                <FormControl variant="standard" style={{textAlign : 'left!important'}}>
                   <InputLabel id="" className="label-name-select">
                     Region
                   </InputLabel>
