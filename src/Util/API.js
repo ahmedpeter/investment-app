@@ -18,9 +18,9 @@
 
 
 
-let BASE_URL = 'https://dry-falls-41890.herokuapp.com/api/v1';
+let BASE_URL = 'https://investment-app-x8v6.onrender.com/api/v1';
 if (process.env.NODE_ENV === 'development') {
-  BASE_URL = `https://dry-falls-41890.herokuapp.com/api/v1`;
+  BASE_URL = `https://investment-app-x8v6.onrender.com/api/v1`;
 }
 
 
