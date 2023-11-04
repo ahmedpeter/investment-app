@@ -47,7 +47,7 @@ export default function CoinsTable() {
   const fetchCoins = async () => {
     setLoading(true);
     const { data } = await axios.get(CoinList("USD"));
-    // console.log(data);
+    // data);
 
     setCoins(data);
     setLoading(false);

@@ -32,7 +32,7 @@
 //       .post(`${BASE_URL}/login`, { username, password })
 //       .then((response) => {
 //         setLoading(false);
-//         console.log(response);
+//         response);
 //         const data = response.data;
 
 //         axios.defaults.headers.common.Authorization = `Bearer ${data.accessToken}`;
@@ -51,7 +51,7 @@
 
 //       })
 //       .catch((err) => {
-//           console.log(err);
+//           err);
 //           setMessage(`Oops! Something isn't right. Confirm
 //           (a) Your Username/Password and
 //           (b) Your Network connectivity`)
@@ -86,7 +86,7 @@ function Login() {
   const br = "<br/>";
 
   const submitHandler = async (e) => {
-    console.log("hello");
+    "hello");
     const BASE_URL = "https://investment-app-x8v6.onrender.com/api/v1";
     setLoading(true);
     e.preventDefault();
@@ -99,7 +99,7 @@ function Login() {
       .post(`${BASE_URL}/login`, { username, password })
       .then((response) => {
         setLoading(false);
-        console.log(response);
+        response);
         const {
           data: { accessToken },
         } = response;
@@ -125,14 +125,14 @@ function Login() {
         localStorage.setItem("user", JSON.stringify(user));
         return;
         //   .then((response) => {
-        //     console.log(response);
+        //     response);
         //     const { data } = response;
         //     localStorage.setItem('operator', JSON.stringify(data));
-        //     console.log(data)
+        //     data)
         //   });
       })
       .catch((err) => {
-        console.log(err);
+        err);
         setMessage(`Oops! Something isn't right. Confirm 
            (a) Your Username/Password and 
            (b) Your Network connectivity`);

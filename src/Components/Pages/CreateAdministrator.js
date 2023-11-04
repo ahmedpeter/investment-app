@@ -43,12 +43,12 @@ function CreateAdministrator() {
             ...adminState,
           })
           .then((response) => {
-            console.log(response);
+            response);
             toast.success(response.data.message);
             history.push('/app/accounts/admins');
           })
           .catch((error) => {
-            console.log(error);
+            error);
             toast.error(error.message);
           });
       };

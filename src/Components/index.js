@@ -33,7 +33,7 @@ function getToken() {
 
   
   const userToken = JSON.parse(tokenString);
-  console.log(userToken);
+  userToken);
   return userToken?.token;
 }
 

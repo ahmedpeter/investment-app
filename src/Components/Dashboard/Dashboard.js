@@ -57,7 +57,7 @@ function Dashboard() {
     axios
       .get(`${BASE_URL}/users`)
       .then((response) => {
-        // console.log(response.data);
+        // response.data);
         filterAdmins(response.data.results);
         setSystemUsers(response.data.results);
         response.data.results.map((user) => {
@@ -74,19 +74,19 @@ function Dashboard() {
           });
           user.withdrawals.map((withdrawal) => {
             tempWithdrawal.push(withdrawal);
-            // console.log(tempWithdrawal);
+            // tempWithdrawal);
             setTotalNoOfWithdrawals(tempWithdrawal.length);
             let totalWithdrawals = tempWithdrawal.reduce(
               (total, currentValue) => (total = total + currentValue.amount),
               0
             );
-            // console.log(totalWithdrawals);
+            // totalWithdrawals);
             setWithdrawals(totalWithdrawals);
           });
         });
       })
       .catch((error) => {
-        console.log(error);
+        error);
         // toast.error(error.message);
       });
   };
@@ -95,12 +95,12 @@ function Dashboard() {
     await axios
       .get(`${BASE_URL}/user/${id}`)
       .then((response) => {
-        // console.log(response);
+        // response);
         // Upload a Profile photo to continue
         setUserData(response.data.results);
       })
       .catch((error) => {
-        console.log(error);
+        error);
         // toast.error(error.message);
       });
   };
@@ -110,7 +110,7 @@ function Dashboard() {
     const user = JSON.parse(userInfo);
     const base64Url = user.data.accessToken.split(".")[1];
     const base64 = base64Url.replace("-", "+").replace("_", "/");
-    // console.log(JSON.parse(window.atob(base64)));
+    // JSON.parse(window.atob(base64)));
     setLoggedInUser(JSON.parse(window.atob(base64)));
     let userId = JSON.parse(window.atob(base64)).id;
     requestForCurrentUserData(userId);
@@ -126,7 +126,7 @@ function Dashboard() {
       }
       return null;
     });
-    // console.log(investors);
+    // investors);
   };
 
   // const handleClick = (loggedInUser)=>{

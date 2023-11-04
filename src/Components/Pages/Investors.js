@@ -55,14 +55,14 @@ function Investors() {
     // fetchUserDetails();
     getAllInvestors();
     // paidInTotal();
-    // console.log(location);
+    // location);
     
   }, []);
 
   const getAllInvestors = ()=> {
     axios.get(`${BASE_URL}/users`)
       .then((response) => {
-        console.log(response);
+        response);
         let users = response.data.results;
         users.map((user)=>{
             if(user.role == "user"){
@@ -74,14 +74,14 @@ function Investors() {
         
       })
       .catch((error) => {
-        console.log(error);
+        error);
         toast.error(error.message);
       });
   }
 
   const handleClick = (id) => {
     history.push(`/app/account/${id}`)
-    console.log(id);
+    id);
   }
 
   const capitalizeFirstLetter = (string) => {

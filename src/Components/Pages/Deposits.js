@@ -59,23 +59,23 @@ function Deposits() {
     axios
       .get(`${BASE_URL}/users`)
       .then((response) => {
-        console.log(response);
+        response);
         response.data.results.map((user) => {
           if (user.investments.length > 0) {
             setAllDeposits((allDeposits) => [...allDeposits, user]);
           }
         });
-        console.log(allDeposits);
+        allDeposits);
       })
       .catch((error) => {
-        console.log(error);
+        error);
         toast.error(error.message);
       });
   };
 
   const handleClick = (id) => {
     history.push(`/app/account/${id}`);
-    console.log(id);
+    id);
   };
 
   return (

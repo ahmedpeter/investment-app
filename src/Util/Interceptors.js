@@ -6,13 +6,13 @@ import axios from "axios";
   const onRequest = (config) => {
     const accessToken = localStorage.getItem("accessToken"); 
     config.headers["Authorization"] = `Bearer ${accessToken}`;
-    console.log(config);
+    config);
     return config;
   };
   
   const onRequestError = (error) => {
     return Promise.reject(error);
-    console.log('i am here')
+    'i am here')
   };
   
   const onResponse = (response) => {

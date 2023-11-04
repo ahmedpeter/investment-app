@@ -31,12 +31,12 @@ const refreshToken = (axios, config) => {
 						return resolve(result);
 					})
 					.catch((err) => {
-						console.log(err);
+						err);
 						return reject(err);
 					});
 			})
 			.catch((err) => {
-				console.log(err);
+				err);
 			});
 	});
 }

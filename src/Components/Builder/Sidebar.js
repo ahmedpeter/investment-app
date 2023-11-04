@@ -34,7 +34,7 @@ function Sidebar() {
         const user = JSON.parse(userInfo);
         const base64Url = user.data.accessToken.split('.')[1];
         const base64 = base64Url.replace('-', '+').replace('_', '/');
-        console.log(JSON.parse(window.atob(base64)))
+        JSON.parse(window.atob(base64)))
         setUser(JSON.parse(window.atob(base64)))
       }
 

@@ -12,7 +12,7 @@ function CryptoCarousel() {
     const { data } = await axios.get(TrendingCoins("USD"));
     setTrending(data);
   };
-  // console.log(trending);
+  // trending);
 
   useEffect(() => {
     fetchTrendingCoin();

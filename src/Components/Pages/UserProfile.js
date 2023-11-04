@@ -41,10 +41,10 @@ const handleInputChange = (e) => {
       } )
     .then((response) => {
       // setLoading(false);
-      console.log(response);
+      response);
     })
     .catch((err) => {
-        console.log(err);
+        err);
         // setLoading(false);
     });
 
@@ -57,8 +57,8 @@ const handleInputChange = (e) => {
         const base64Url = user.data.accessToken.split('.')[1];
         const base64 = base64Url.replace('-', '+').replace('_', '/');
         let userId = JSON.parse(window.atob(base64)).id;
-        console.log(JSON.parse(window.atob(base64)))
-        console.log(userId);
+        JSON.parse(window.atob(base64)))
+        userId);
         history.push(`/app/profile/${userId}`)
         requestForCurrentUserData(userId);
         setId(userId)
@@ -68,11 +68,11 @@ const handleInputChange = (e) => {
       const requestForCurrentUserData = async (id)=> {
         await axios.get(`${BASE_URL}/user/${id}`)
           .then((response) => {
-            console.log(response);
+            response);
             setUser(response.data.results)
           })
           .catch((error) => {
-            console.log(error);
+            error);
             toast.error(error.message);
           });
       }

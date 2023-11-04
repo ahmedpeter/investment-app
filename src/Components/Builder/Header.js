@@ -24,9 +24,9 @@ function Header() {
   //   if(!tokenString) {
   //     history.push("/login");
   //   }
-  //   console.log(tokenString);
+  //   tokenString);
   //   const userToken = JSON.parse(tokenString);
-  //   console.log(tokenString);
+  //   tokenString);
   //   return tokenString;
   // }
 
@@ -37,10 +37,10 @@ function Header() {
       history.push("/login");
     }
     const user = JSON.parse(userInfo);
-    console.log(user.data);
+    user.data);
     setUser(user.data);
     // return user?.data;
-    // console.log(user.data.firstname);
+    // user.data.firstname);
   };
 
   return (
