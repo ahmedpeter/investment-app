@@ -152,7 +152,7 @@ function InvestorDetails() {
   };
 
   const updateInvestmentStatus = (investmentId, val) => {
-    investmentId, val);
+    // investmentId, val);
     axios
       .put(`${BASE_URL}/investment/${investmentId}`, { status: val })
       .then((response) => {
@@ -177,7 +177,7 @@ function InvestorDetails() {
 
   const handleNewDepositSubmit = (e) => {
     e.preventDefault();
-    typeof amount);
+    // typeof amount);
     axios
       .post(`${BASE_URL}/investment/${id}`, {
         plan,
@@ -260,7 +260,7 @@ function InvestorDetails() {
         response.data.results.profile_pic == null ||
         response.data.results.profile_pic === ""
       ) {
-        "profile_pic isnt available");
+        // "profile_pic isnt available");
         setBtnDisabled(true);
       }
       // response);
