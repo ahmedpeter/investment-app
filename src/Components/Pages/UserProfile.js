@@ -58,7 +58,7 @@ const handleInputChange = (e) => {
         const base64 = base64Url.replace('-', '+').replace('_', '/');
         let userId = JSON.parse(window.atob(base64)).id;
         JSON.parse(window.atob(base64)))
-        userId);
+        // userId);
         history.push(`/app/profile/${userId}`)
         requestForCurrentUserData(userId);
         setId(userId)
@@ -68,11 +68,11 @@ const handleInputChange = (e) => {
       const requestForCurrentUserData = async (id)=> {
         await axios.get(`${BASE_URL}/user/${id}`)
           .then((response) => {
-            response);
+            // response);
             setUser(response.data.results)
           })
           .catch((error) => {
-            error);
+            // error);
             toast.error(error.message);
           });
       }
