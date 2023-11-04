@@ -38,7 +38,7 @@ const Landing = () => {
       <div className="front__store">
         <div className="left__store">
           <h3>
-            <div class="scroller">
+            {/* <div class="scroller">
               <span>
                 Bitcoin
                 <br />
@@ -47,15 +47,14 @@ const Landing = () => {
                 Crypto
                 <br />
               </span>
-            </div>
+            </div> */}
             Trading Investment with{" "}
             <span className="text-pink">Dividend Global</span>
           </h3>
           <p className="trucn">
-            Global Investment Trading is a group company of over 1500 strong
-            professionals and 2 mega data center’s parent Cyfuture with
-            experience of over 5+ years in Data Center Industry serving over
-            140,000 Customers.
+            Dividend Global is a group company of over 1500 strong professionals
+            and 2 mega data center’s parent Cyfuture with experience of over 5+
+            years in Data Center Industry serving over 140,000 Customers.
           </p>
 
           <button className="btn ml-0">Know More </button>
@@ -103,18 +102,25 @@ const Landing = () => {
             </h3>
             {/* <h2 className="mb-md ">Innovations present an opportunity...</h2>  */}
             <p className="font-13 lh-2">
-              GIT Crypto is a platform for the future of funding that powering
-              dat for the new equity blockchain. Trade with us to enjoy
-              better-than-market conditions and a friction-free online trading
-              experience: free demo account, instant withdrawals, 0% commission,
-              no overnight fees, stable spreads, ultra-fast execution.
+              Dividend Global is the platform for the future of funding and
+              powering data for the new equity blockchain. Trade with us to
+              enjoy better-than-market conditions and a friction-free online
+              trading experience: free demo account, instant withdrawals, 0%
+              commission, no overnight fees, stable spreads, ultra-fast
+              execution.
             </p>
-
+            <br />
             <p className="font-13 lh-2">
-              Subject to the limitations set forth in this agreement, the
-              purpose of the Partnership are to engage in the business of
-              International trade of Crude, Gold, bulk commodities in the form
-              of import and export from Dubai and China
+              Innovation is the cornerstone of evolution and progress. It
+              presents an opportunity for individuals, businesses, and societies
+              to excel. Rather than fearing the unknown, embracing innovation
+              unveils untapped potential and opens doors to novel solutions.
+              When we view innovations as an opportunity, we invite creativity
+              and new perspectives. It encourages us to explore uncharted
+              territories and discover groundbreaking ideas that can solve
+              complex challenges. By leveraging the power of innovation, we
+              unlock new pathways to success and create a better future for
+              generations to come.
             </p>
             <button className="btn tetiary">Learn More</button>
           </div>
@@ -126,9 +132,11 @@ const Landing = () => {
           Quick Bitcoin <span style={{ color: "black" }}>Investment</span>
         </h3>
         <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its <br />
-          layout. The point of using Lorem Ipsum.
+          Advancements have driven progress, revolutionized industries, and
+          improved our daily lives. By fostering a mindset <br />
+          that perceives innovation as an opportunity, rather than a threat,
+          individuals and organizations can harness its potential to create new
+          solutions and possibilities.
         </p>
       </div>
 
@@ -270,12 +278,14 @@ const Landing = () => {
               <div class="widget-contact">
                 <h3 class="footer-title">Our Company</h3>
                 <p style={{ lineHeight: "2em" }}>
-                  GIT Crypto is a platform for the future of funding that
-                  powering dat for the new equity blockchain. Trade with us to
-                  enjoy better-than-market conditions and a friction-free online
-                  trading experience: free demo account, instant withdrawals, 0%
-                  commission, no overnight fees, stable spreads, ultra-fast
-                  execution.
+                  In the realm of innovation, perception is key. Viewing
+                  innovations as an opportunity rather than a threat is a
+                  transformative mindset. It allows us to approach change with
+                  optimism and a sense of possibility. When innovation is seen
+                  as an opportunity, it encourages collaboration, fosters
+                  curiosity, and drives continuous improvement. This shift in
+                  perspective is crucial in navigating the complexities of our
+                  fast-paced world.
                 </p>
               </div>
             </div>
@@ -365,8 +375,8 @@ const Landing = () => {
                   </li>
                   <li>
                     <i class="fa fa-envelope"></i>{" "}
-                    <a href="mailto:support@globaltrade.com">
-                      support@globaltrade.com
+                    <a href="mailto:support@dividendglobal.com">
+                      support@dividendglobal.com
                     </a>
                   </li>
                   <li>
