@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./Auth/Login";
 import Register from "./Auth/Register";
@@ -19,34 +19,30 @@ import Sidebar from "./Builder/Sidebar";
 import Investors from "./Pages/Investors";
 import Administrators from "./Pages/Administrators";
 import CreateAdministrator from "./Pages/CreateAdministrator";
-import 'react-alice-carousel/lib/alice-carousel.css';
+import "react-alice-carousel/lib/alice-carousel.css";
 // import { useStateValue } from "../Util/StateProvider";
-
-
 
 // function setToken(userToken) {
 //   localStorage.setItem('accessToken', JSON.stringify(userToken));
 // }
 
 function getToken() {
-  const tokenString = localStorage.getItem('accessToken');
+  const tokenString = localStorage.getItem("accessToken");
 
-  
   const userToken = JSON.parse(tokenString);
-  userToken);
+  // userToken);
   return userToken?.token;
 }
 
-const getUserInfo =()=>{
-  const userInfo = localStorage.getItem('userInfo');
+const getUserInfo = () => {
+  const userInfo = localStorage.getItem("userInfo");
   const user = JSON.parse(userInfo);
   return user?.user.email;
-}
-
+};
 
 function Application() {
   // const [token, setToken] = useState();
-  
+
   // const token = getToken();
 
   // if(!token) {
@@ -82,9 +78,9 @@ function Application() {
               <Deposits />
             </Route>
             <Route path="/app/profile/:id" exact>
-              <Profile/>
-              </Route>
-              <Route path="/app/accounts/investors" exact>
+              <Profile />
+            </Route>
+            <Route path="/app/accounts/investors" exact>
               <Investors />
             </Route>
             <Route path="/app/accounts/admins" exact>
