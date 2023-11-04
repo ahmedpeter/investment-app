@@ -128,7 +128,7 @@ function InvestorDetails() {
     const userInfo = localStorage.getItem("userInfo");
 
     const user = JSON.parse(userInfo);
-    user);
+    // user);
     if (user.data.role === "admin") setSuperAdmin(true);
   };
 
@@ -141,7 +141,7 @@ function InvestorDetails() {
       .writeText(textToCopy)
       .then(() => {
         setCopied(true);
-        textToCopy);
+        // textToCopy);
         setTimeout(() => {
           setCopied(false);
         }, 2000); // Display 'Copied!' message for 2 seconds
@@ -156,21 +156,21 @@ function InvestorDetails() {
     axios
       .put(`${BASE_URL}/investment/${investmentId}`, { status: val })
       .then((response) => {
-        response);
+        // response);
         toast.success(response.data.message);
         fetchUserDetails();
         handleFormClose();
       })
       .catch((error) => {
-        error);
+        // error);
         toast.error(error.message);
       });
-    investment);
+    // investment);
     setInvestmentToUpdate(investment);
   };
 
   const handleUpdateStatusFormOpen = (investment) => {
-    investment);
+    // investment);
     setOpenInvestmentToUpdate(true);
     setInvestment(investment);
   };
@@ -187,20 +187,20 @@ function InvestorDetails() {
         proof_of_payment,
       })
       .then((response) => {
-        response);
+        // response);
         toast.success(response.data.message);
         fetchUserDetails();
         handleFormClose();
       })
       .catch((error) => {
-        error);
+        // error);
         toast.error(error.message);
       });
   };
 
   const handleWithdrawal = (e) => {
     e.preventDefault();
-    investment);
+    // investment);
     // if(amount_to_withdraw > amount_invested){
     //   toast.error("You cant withdraw above "+ amount_invested )
     //   return false
@@ -210,13 +210,13 @@ function InvestorDetails() {
         amount_to_withdraw,
       })
       .then((response) => {
-        response);
+        // response);
         toast.success(response.data.message);
         fetchUserDetails();
         handleFormClose();
       })
       .catch((error) => {
-        error);
+        // error);
         toast.error(error.message);
       });
   };
@@ -231,7 +231,7 @@ function InvestorDetails() {
   };
 
   const handleNewWithdrawalFormOpen = (investment) => {
-    investment);
+    // investment);
     setInvestment(investment);
     setWithdrawalModal(true);
   };
@@ -263,7 +263,7 @@ function InvestorDetails() {
         "profile_pic isnt available");
         setBtnDisabled(true);
       }
-      response);
+      // response);
       setAllInvestments(response.data.results.investments);
 
       let tot = response.data.results?.investments?.reduce(

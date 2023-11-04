@@ -72,7 +72,7 @@ function Register() {
       .then((response) => {
         // check if username or telephone number exist in the db to avoid duplicates
         setLoading(false);
-        response);
+        // response);
         const {
           data: { accessToken },
         } = response;
@@ -84,7 +84,7 @@ function Register() {
         setRegSuccessfulModal(true);
       })
       .catch((err) => {
-        err.error);
+        // err.error);
         setMessage(`Oops! Something isn't right. Double checkup all fields`);
         setLoading(false);
       });

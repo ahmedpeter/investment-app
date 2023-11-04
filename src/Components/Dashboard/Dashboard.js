@@ -86,7 +86,7 @@ function Dashboard() {
         });
       })
       .catch((error) => {
-        error);
+        // erro);
         // toast.error(error.message);
       });
   };
@@ -100,7 +100,7 @@ function Dashboard() {
         setUserData(response.data.results);
       })
       .catch((error) => {
-        error);
+        // error);
         // toast.error(error.message);
       });
   };

@@ -37,7 +37,7 @@ function Header() {
       history.push("/login");
     }
     const user = JSON.parse(userInfo);
-    user.data);
+    // user.data);
     setUser(user.data);
     // return user?.data;
     // user.data.firstname);

@@ -99,7 +99,7 @@ function Login() {
       .post(`${BASE_URL}/login`, { username, password })
       .then((response) => {
         setLoading(false);
-        response);
+        // response);
         const {
           data: { accessToken },
         } = response;

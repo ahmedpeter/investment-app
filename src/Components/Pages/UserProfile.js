@@ -41,10 +41,10 @@ const handleInputChange = (e) => {
       } )
     .then((response) => {
       // setLoading(false);
-      response);
+      // response);
     })
     .catch((err) => {
-        err);
+        // err);
         // setLoading(false);
     });
 
