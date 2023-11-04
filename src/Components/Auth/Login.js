@@ -86,7 +86,7 @@ function Login() {
   const br = "<br/>";
 
   const submitHandler = async (e) => {
-    "hello");
+    // "hello");
     const BASE_URL = "https://investment-app-x8v6.onrender.com/api/v1";
     setLoading(true);
     e.preventDefault();
