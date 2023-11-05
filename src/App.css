@@ -119,6 +119,13 @@
     font-size: 13px;
     /* text-transform: uppercase; */
 }
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+  border: none!important
+}
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input{
+  font-size: 11px!important;
+  font-family: manrope
+}
 .btn {
   font-size: 9px;
   text-transform: uppercase;

@@ -102,12 +102,13 @@ const Landing = () => {
             </h3>
             {/* <h2 className="mb-md ">Innovations present an opportunity...</h2>  */}
             <p className="font-13 lh-2">
-              Dividend Global is the platform for the future of funding and
-              powering data for the new equity blockchain. Trade with us to
-              enjoy better-than-market conditions and a friction-free online
-              trading experience: free demo account, instant withdrawals, 0%
-              commission, no overnight fees, stable spreads, ultra-fast
-              execution.
+              At our platform, we understand that the allure of crypto and forex
+              trading goes beyond mere financial gains. It's about taking
+              control of your financial destiny, gaining insight into global
+              economies, and embracing the spirit of entrepreneurship. We
+              believe that these markets present an extraordinary opportunity to
+              unlock your potential, foster financial growth, and secure a more
+              prosperous future.
             </p>
             <br />
             <p className="font-13 lh-2">
@@ -145,14 +146,18 @@ const Landing = () => {
           <div className="about__right">
             <p className="mb-md bold">Why Investment is so Important</p>
             <p className="font-13 lh-2 mb-md">
-              Unlike paper money, Bitcoin and other cryptocurrencies are
-              produced mathematically and held digitally. The people who
-              voluntarily offer their computing power to secure these
-              cryptocurrency networks are called miners. Cryptocurrencies don’t
-              have a central government or other so-called ‘middlemen’ that
-              decide about the future of the system. – They are in fact digital,
-              borderless democracies in which miners vote with their computing
-              power to reach order and consensus
+              Remember, success in trading requires continuous learning,
+              discipline, and a strategic approach. Our platform is not only a
+              marketplace; it's a community of passionate individuals driven by
+              the desire to achieve financial freedom and security. Unlike paper
+              money, Bitcoin and other cryptocurrencies are produced
+              mathematically and held digitally. The people who voluntarily
+              offer their computing power to secure these cryptocurrency
+              networks are called miners. Cryptocurrencies don’t have a central
+              government or other so-called ‘middlemen’ that decide about the
+              future of the system. – They are in fact digital, borderless
+              democracies in which miners vote with their computing power to
+              reach order and consensus
             </p>
             <div className="row al-base">
               <div className="p-5">
@@ -169,10 +174,12 @@ const Landing = () => {
                 <p className="mb-md bold">Highly Experienced</p>
 
                 <p className="font-13 lh-2">
-                  We are building investment data centers around the world that
-                  are able to support 6 investment algorithms for 10+ different
-                  cryptocurrencies. If that’s not enough, we’d be happy to also
-                  support the ones you want to mine!
+                  Through our comprehensive educational resources, real-time
+                  market analysis, and state-of-the-art trading tools, we aim to
+                  equip you with the knowledge and skills needed to capitalize
+                  on market fluctuations and trends. The potential for
+                  substantial profits in these markets is unparalleled, and our
+                  goal is to help you harness this potential effectively.
                 </p>
               </div>
             </div>
@@ -245,8 +252,10 @@ const Landing = () => {
                 </div>
                 <div class="step-text">
                   <span>
-                    Your total income directly depends on the amount you invest,
-                    so the more you contribute, the more you can earn.{" "}
+                    Join us on this exhilarating journey, and let’s explore the
+                    potential of crypto and forex trading together. The
+                    opportunities are boundless, and your success story could be
+                    just a trade away!
                   </span>
                 </div>
               </div>
@@ -278,14 +287,13 @@ const Landing = () => {
               <div class="widget-contact">
                 <h3 class="footer-title">Our Company</h3>
                 <p style={{ lineHeight: "2em" }}>
-                  In the realm of innovation, perception is key. Viewing
-                  innovations as an opportunity rather than a threat is a
-                  transformative mindset. It allows us to approach change with
-                  optimism and a sense of possibility. When innovation is seen
-                  as an opportunity, it encourages collaboration, fosters
-                  curiosity, and drives continuous improvement. This shift in
-                  perspective is crucial in navigating the complexities of our
-                  fast-paced world.
+                  The crypto and forex markets operate 24/7, offering
+                  unparalleled liquidity and volatility, which in turn presents
+                  a vast spectrum of opportunities. Whether you're an
+                  experienced trader or just stepping into the world of
+                  financial markets, our platform is designed to cater to your
+                  needs. We encourage you to dream big, take calculated risks,
+                  and embrace the possibilities that these markets offer.
                 </p>
               </div>
             </div>

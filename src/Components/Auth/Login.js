@@ -66,9 +66,19 @@ import MiniLoader from "../../Util/Loader";
 import BASE_URL from "../../Util/API";
 import API from "../../Util/API";
 import axios from "axios";
+import {
+  InputAdornment,
+  // IconButton,
+  TextField,
+  // VisibilityIcon,
+  // VisibilityOffIcon,
+} from "@mui/material";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import logo from "../../Assets/imgs/Git-logo.png";
 import { ToastContainer, toast } from "react-toastify";
 import "./auth.css";
+import { IconButton } from "@material-ui/core";
 import { ErrorToaster } from "../../Util/Toaster";
 
 function Login() {
@@ -78,6 +88,7 @@ function Login() {
   const [password, setPassword] = useState("");
   const [user, setUser] = useState({});
   const [error, setError] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const history = useHistory();
@@ -146,6 +157,9 @@ function Login() {
       submitHandler();
     }
   }
+  const handleTogglePasswordVisibility = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword);
+  };
 
   return (
     <div className="login">
@@ -172,18 +186,48 @@ function Login() {
               </label>
             </div>
             <div className="form mtb-10">
-              <input
-                type="password"
+              <TextField
+                style={{ width: "100%" }}
+                className="page-form f-11"
+                type={showPassword ? "text" : "password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                // label="Password"
+                InputProps={{
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <IconButton
+                        onClick={handleTogglePasswordVisibility}
+                        edge="end">
+                        {showPassword ? (
+                          <VisibilityOffIcon />
+                        ) : (
+                          <VisibilityIcon />
+                        )}
+                      </IconButton>
+                    </InputAdornment>
+                  ),
+                }}
+              />
+              {/* <input
+                type={showPassword ? "text" : "password"}
                 className="page-form f-11"
                 placeholder=" "
                 value={password}
                 autoComplete="off"
                 onChange={(e) => setPassword(e.target.value)}
                 required
-              />
-              <label htmlFor="password" className="label-name floating__label">
+              /> */}
+
+              <label
+                htmlFor="password"
+                style={{ top: "-14px" }}
+                className="label-name floating__label">
                 <span className="content-name">Security</span>
               </label>
+              {/* <IconButton onClick={handleTogglePasswordVisibility}>
+                {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
+              </IconButton> */}
             </div>
             {msg && <p className="typical-error"> {msg}</p>}
             {success && <p className="typical-success">{msg}</p>}

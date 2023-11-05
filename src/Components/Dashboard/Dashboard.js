@@ -21,6 +21,7 @@ import axiosInstance from "../../Util/axiosInstance";
 import "./dashboard.css";
 import CryptoCarousel from "../widgets/Carousel";
 import CoinsTable from "../widgets/CoinsTable";
+import CandlestickChart from "../widgets/CandleStick";
 
 function Dashboard() {
   const history = useHistory();
@@ -490,6 +491,7 @@ function Dashboard() {
           {/* </Link> */}
         </>
       )}
+      <CandlestickChart />
       <CryptoCarousel />
       <CoinsTable />
     </div>
