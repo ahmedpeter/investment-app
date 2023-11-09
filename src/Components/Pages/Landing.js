@@ -38,7 +38,7 @@ const Landing = () => {
       <div className="front__store">
         <div className="left__store">
           <h3>
-            {/* <div class="scroller">
+            <div class="scroller">
               <span>
                 Bitcoin
                 <br />
@@ -47,7 +47,7 @@ const Landing = () => {
                 Crypto
                 <br />
               </span>
-            </div> */}
+            </div>
             Trading Investment with{" "}
             <span className="text-pink">Dividend Global</span>
           </h3>
